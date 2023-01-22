@@ -30,9 +30,9 @@ jobs:
       - run: flutter pub get
       - run: flutter config --enable-web
       - run: flutter build web --release
-      - run: git checkout -b gh-pages
       - run: cd ./build/web
       - run: git init
+      - run: git checkout -b gh-pages
       - run: git config --global user.email ninebell94@gmail.com
       - run: git config --global user.name Ninebell
       - run: git add --all
