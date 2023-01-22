@@ -19,8 +19,9 @@ jobs:
       
       - run: git config --global user.name Ninebell
       - run: git config --global user.email ninebell94@gmail.com
-      - run: |
-          git remote add origin https://$@github.com/Ninebell/ninebell.github.io.git 
+      - run: 
+      # |
+      #     git remote add origin https://$@github.com/Ninebell/ninebell.github.io.git 
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
