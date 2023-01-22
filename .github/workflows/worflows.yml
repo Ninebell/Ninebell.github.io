@@ -1,13 +1,14 @@
-name: Build and deploy flutter web app
-
+name: Flutter Web
 on:
   push:
-    branches: [ "master" ]
-
+    branches:
+      - master
 jobs:
   build:
+    name: Build Web
+    env:
+      my_secret: $
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
       - uses: subosito/flutter-action@v2
@@ -16,13 +17,15 @@ jobs:
       - run: flutter pub get
       - run: flutter config --enable-web
       - run: flutter build web --release
+        working-directory: ./
       # base-href "/${{ github.event.repository.name }}/"
       - run: |
           # 2. change path to [existed lib/main.dart path]/build/web
           cd ./build/web
           git init
-          git config --global user.name Ninebell
           git config --global user.email ninebell94@gmail.com
+          git config --global user.name Ninebell
+          git status
           git remote add origin https://$@github.com/Ninebell/ninebell.github.io.git 
           git checkout -b gh-pages
           git add --all
