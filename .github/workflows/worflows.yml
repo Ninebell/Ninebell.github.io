@@ -34,4 +34,4 @@ jobs:
           echo commit
           git commit -m "update"
           echo push
-          git push origin gh-pages -f
+          git push --set-upstream origin gh-pages -f
