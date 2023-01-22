@@ -20,6 +20,7 @@ jobs:
         working-directory: ./
       # base-href "/${{ github.event.repository.name }}/"
       - run: |
+          pwd
           # 2. change path to [existed lib/main.dart path]/build/web
           cd ./build/web
           git init
