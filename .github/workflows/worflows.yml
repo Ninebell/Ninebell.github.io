@@ -38,7 +38,6 @@ jobs:
       - run: git commit -m "update"
       - run: git push --set-upstream origin gh-pages -f
 
-
 # name: Flutter Web
 # on:
 #   push:
