@@ -31,5 +31,7 @@ jobs:
           git remote add origin https://$@github.com/Ninebell/ninebell.github.io.git 
           git checkout -b gh-pages
           git add --all
+          echo commit
           git commit -m "update"
+          echo push
           git push origin gh-pages -f
