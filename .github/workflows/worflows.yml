@@ -14,6 +14,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: 'master'
+          token: $ {{ secrets.ACTION_TOKEN}}
       - run: flutter pub get
       - run: flutter config --enable-web
       - run: flutter build web --release
@@ -24,8 +25,8 @@ jobs:
           cd ./build/web
           ls
           git init
-          git config user.email ninebell94@gmail.com
-          git config user.name Ninebell
+          git config --global user.email ninebell94@gmail.com
+          git config --global user.name Ninebell
           git status
           git remote add origin https://$@github.com/Ninebell/ninebell.github.io.git 
           git checkout -b gh-pages
