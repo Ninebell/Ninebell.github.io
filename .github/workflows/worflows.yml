@@ -22,6 +22,7 @@ jobs:
       - run: |
           # 2. change path to [existed lib/main.dart path]/build/web
           cd ./build/web
+          export GITHUB_TOKEN=${{secrets.ACTION_TOKEN}}
           ls
           git init
           git config --global user.email ninebell94@gmail.com
