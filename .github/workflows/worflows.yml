@@ -30,6 +30,7 @@ jobs:
       - run: flutter pub get
       - run: flutter config --enable-web
       - run: flutter build web --release
+      - run: git checkout -b gh-pages
 # name: Flutter Web
 # on:
 #   push:
