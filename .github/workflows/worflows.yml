@@ -29,7 +29,7 @@ jobs:
       # - name: Run a multi-line script
       - run: flutter pub get
       - run: flutter config --enable-web
-      - run: flutter build web --release --base-href /home/
+      - run: flutter build web --release --base-href /build/web/
       - run: git init
       - run: git checkout -b gh-pages
       - run: git config --global user.email ninebell94@gmail.com
