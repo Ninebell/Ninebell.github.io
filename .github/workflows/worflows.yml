@@ -31,7 +31,7 @@ jobs:
       - run: flutter config --enable-web
       - run: flutter build web --release --base-href /home/
       - run: mkdir home
-      - run: mv -r ./build/web home
+      - run: mv ./build/web home
       - run: git init
       - run: git checkout -b gh-pages
       - run: git config --global user.email ninebell94@gmail.com
