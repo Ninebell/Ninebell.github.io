@@ -1,16 +1,20 @@
-# ninebell_blog
+# Hydejack Starter Kit
 
-A new Flutter project.
+A quicker, cleaner way to get started blogging with [Hydejack](https://hydejack.com/).
 
-## Getting Started
+## Quick Start
+### Running locally
+1. Clone repository (git users), or [download] and unzip.
+2. Open terminal, `cd` into root directory (where `_config.yml` is located)
+3. Run `bundle install` [^1]
+4. Run `bundle exec jekyll serve`
+5. Open <http://localhost:4000/hydejack-starter-kit/>
 
-This project is a starting point for a Flutter application.
+## What's next?
+* Open files and read the comments
+* Read the [docs](https://hydejack.com/docs/)
+* Buy the [PRO version](https://hydejack.com/download/) to get the project and resume layout, newsletter subscription box, custom forms, and more.
 
-A few resources to get you started if this is your first Flutter project:
+[^1]: Requires Bundler. Install with `gem install bundler`.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[download]: https://github.com/hydecorp/hydejack-starter-kit/archive/master.zip
